@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  website:
+    image: "node:17-alpine"
+    build: 
+      context: ./SummerBoredomWebsite
+      dockerfile: dockerfile.dev
+    ports:
+      - "4200:4200"
+    depends_on:
+      - db
+    volumes:
+      - "./SummerBoredomWebsite:/usr/src/app"
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: summerboredom

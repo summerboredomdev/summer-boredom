@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sarah-book": {
+    "summerboredom": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sarah-book",
+            "outputPath": "dist/summerboredom",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sarah-book:build"
+            "browserTarget": "summerboredom:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sarah-book:build:production"
+              "browserTarget": "summerboredom:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sarah-book:build"
+            "browserTarget": "summerboredom:build"
           }
         },
         "test": {
@@ -108,11 +108,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "sarah-book:serve"
+            "devServerTarget": "summerboredom:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "sarah-book:serve:production"
+              "devServerTarget": "summerboredom:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "sarah-book"
+  "defaultProject": "summerboredom"
 }
