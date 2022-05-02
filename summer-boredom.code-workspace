@@ -1,8 +1,24 @@
 {
-  "folders": [
-    {
-      "path": "."
-    }
-  ],
-  "settings": {}
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"javascript.updateImportsOnFileMove.enabled": "always",
+		"editor.fontSize": 16,
+		"prettier.printWidth": 160,
+		"workbench.iconTheme": "vscode-icons",
+		"files.autoSave": "afterDelay",
+		"editor.formatOnType": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"git.autofetch": true,
+		"editor.codeActionsOnSave": {
+			"autoFixOnSave": true,
+			"source.fixAll": true,
+			"source.organizeImports": true
+		},
+	}
 }
